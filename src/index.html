@@ -6,34 +6,24 @@
       <link href="dist/output.css" rel="stylesheet">
       <title>Document</title>
    </head>
-   <body>
-
-      <button class="bg-red-600 border-purple-700" onclick="toggleLanguage()">Change Language</button>
-      <nav class="primary-navigation">
-         <ul class="nav-list">
-           <li><a href="#home">Home</a></li>
-           <li><a href="#about">About</a></li>
-           <li><a href="#works">My Work</a></li>
-           <li><a href="#techs">Tecjs</a></li>
-           <li><a href="#contact">Contact</a></li>
-         </ul>
-       </nav>
-      <img  
-       id="home"
-         class="relative object-cover"
-         width="100%"
-         height="100%"
-         src="image/download.jpg" alt=""/>
-      <div class="absolute top-1/4 text-white text-center justify-center w-full">
-         <p class="text-6xl text-pink-300" id="name">Meu nome é Paulo Mariano</p>
-         <p class="text-6xl" id="job">Desenvolvedor Web</p>
-         <button>Currículo
+   <body class="flex">
+      <main>
+         <button class="bg-red-600 border-purple-700" onclick="toggleLanguage()">Change Language</button>
+         <img  
+            id="home"
+            class="relative object-cover"
+            width="100%"
+            height="100%"
+            src="image/download.jpg" alt=""/>
+         <div class="absolute top-1/4 text-white text-center justify-center w-full">
+            <p class="text-6xl text-pink-300" id="name">Meu nome é Paulo Mariano</p>
+            <p class="text-6xl" id="job">Desenvolvedor Web</p>
+            <button>Currículo
             <img width="50px" src="icons/download-icon.svg" alt="download">
-         </button>
-      </div>
-
-      <section id="about" class="text-center w-full bg-red-950 my-14">
-         <h1>About me:</h1>
+            </button>
+         </div>
+         <section id="about" class="text-center w-full bg-red-950 my-14">
+            <h1>About me:</h1>
             <p class="flex m-auto text-center w-1/2 justify-start">
                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quisquam dolores eos! Iusto provident facere facilis voluptatibus adipisci dolore, nihil sunt laboriosam sit ducimus esse quis ad. Laborum, earum velit!
                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum deserunt inventore veniam dolorum a eius. Magnam quisquam similique nemo facilis est veritatis quos ipsum temporibus quod? Dolores incidunt enim at.
@@ -41,118 +31,117 @@
                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nam eos sint quo reprehenderit aut officiis, quis, officia eligendi eius illum suscipit labore error ut modi eum molestias dolor at?
                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur veniam a dolorem cupiditate ea aspernatur, porro magnam id repudiandae suscipit aliquam commodi hic odit dignissimos. Voluptatum facere ipsa placeat tempora!
             </p>
-      </section>
-
-      <h1 class="text-red" id="work">Work experience</h1>
-      <section id="works" class="grid grid-cols-2 gap-6" >
-         <div class="bg-red-200">
-            <h1>Desenvolvedor FullStack</h1>
-            <h2>Empresa: ILUMEO</h2>
-            <h3>Período: Março de 2023 - Atualmente</h3>
-            <p>Desenvolvimento frontend com ReactJS, desenvolvimento backend com NodeJS</p>
-         </div>
-         <div class="bg-red-600">
-            <h1>Desenvolvedor FrontEnd</h1>
-            <h2>Empresa: Ketra Soluções Inteligentes</h2>
-            <h3>Período: Agosto 2022 - Janeiro 2023</h3>
-            <p>
-               Desenvolvimento de aplicações web com ReactJS, situacionalmente desenvolvimento de aplicações backend com .NET
-            </p>
-         </div>
-         <div class="bg-red-600">
-            <h1>Desenvolvedor FullStack</h1>
-            <h2>Empresa: Infosis Consultoria e Sistemas</h2>
-            <h3>Período: Janeiro de 2022 - Agosto de 2022</h3>
-            <p>
-
-               Desenvolvimento de aplicações e manutenção de um sistema legado utilizando ExtJS e .NET. Primeiro contato profissional com ReactJS, liderando uma equipe de frontend com 3 pessoas em um projeto internacional.            </p>
-         </div>
-         <div class="bg-red-600">
-            <h1>Desenvolvedor FullStack - Estagiário</h1>
-            <h2>Empresa: Infosis Consultoria e Sistemas</h2>
-            <h3>Período: Junho de 2021 - Janeiro de 2022</h3>
-            <p>Primeiro contato profissional com programação. Aprendi e desenvolvi funcionalidades de um sistema legado, além de realizar sua manutenção.</p>
-         </div>
-      </section>
- 
-      <section id="techs" class="grid grid-cols-3 gap-10 m-10 bg-purple-600">
-         <div class="flex flex-col items-center justify-end ">
-            <img width="20%" src="icons/css3-original.svg" alt="sass">
-            <span>CSS</span>
-         </div>
-         <div class="flex flex-col items-center justify-end">
-            <img width="20%" src="icons/docker-original.svg" alt="sass">
-            <span>Docker</span>
-         </div>
-         <div class="flex flex-col items-center justify-end"> 
-            <img width="20%" src="icons/git-original.svg" alt="sass">
-            <span>Git</span>
-         </div>
-         <div class="flex flex-col items-center justify-end"> 
-            <img width="20%" src="icons/html5-original.svg" alt="sass">
-            <span>HTML</span>
-         </div>
-         <div class="flex flex-col items-center justify-end"> 
-            <img width="20%" src="icons/javascript-original.svg" alt="sass">
-            <span>Javascript</span>
-         </div>
-         <div class="flex flex-col items-center justify-end"> 
-            <img width="20%" src="icons/nextjs-icon-svgrepo-com.svg" alt="sass">
-            <span>NextJS</span>
-         </div>
-         <div class="flex flex-col items-center justify-end"> 
-            <img width="20%" src="icons/nodejs-original.svg" alt="sass">
-            <span>NodeJS</span>
-         </div>
-         <div class="flex flex-col items-center justify-end"> 
-            <img width="20%" src="icons/react-original.svg" alt="sass">
-            <span>ReactJS</span>
-         </div>
-         <div class="flex flex-col items-center justify-end"> 
-            <img width="20%" src="icons/typescript-original.svg" alt="sass">
-            <span>Typescript</span>
-         </div>
-         <div class="flex flex-col items-center justify-end "> 
-            <img width="20%" src="icons/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg" alt="sass">
-            <span>Tailwind CSS</span>
-         </div>
-         <div class="flex flex-col items-center justify-end"> 
-            <img width="20%" src="icons/postgresql.svg" alt="sass">
-            <span>PostgreSQL</span>
-         </div>
-         <div class="flex flex-col items-center justify-end "> 
-            <img width="20%" src="icons/Microsoft_.NET_logo.svg" alt="sass">
-            <span>.NET</span> 
-         </div>
-      </section>
-
-      <footer id="contact" class="flex justify-around border-4 border-t-indigo-500">
-         
+         </section>
+         <h1 class="text-red" id="work">Work experience</h1>
+         <section id="works" class="grid grid-cols-2 gap-6" >
+            <div class="bg-red-200">
+               <h1>Desenvolvedor FullStack</h1>
+               <h2>Empresa: ILUMEO</h2>
+               <h3>Período: Março de 2023 - Atualmente</h3>
+               <p>Desenvolvimento frontend com ReactJS, desenvolvimento backend com NodeJS</p>
+            </div>
+            <div class="bg-red-600">
+               <h1>Desenvolvedor FrontEnd</h1>
+               <h2>Empresa: Ketra Soluções Inteligentes</h2>
+               <h3>Período: Agosto 2022 - Janeiro 2023</h3>
+               <p>
+                  Desenvolvimento de aplicações web com ReactJS, situacionalmente desenvolvimento de aplicações backend com .NET
+               </p>
+            </div>
+            <div class="bg-red-600">
+               <h1>Desenvolvedor FullStack</h1>
+               <h2>Empresa: Infosis Consultoria e Sistemas</h2>
+               <h3>Período: Janeiro de 2022 - Agosto de 2022</h3>
+               <p>
+                  Desenvolvimento de aplicações e manutenção de um sistema legado utilizando ExtJS e .NET. Primeiro contato profissional com ReactJS, liderando uma equipe de frontend com 3 pessoas em um projeto internacional.            
+               </p>
+            </div>
+            <div class="bg-red-600">
+               <h1>Desenvolvedor FullStack - Estagiário</h1>
+               <h2>Empresa: Infosis Consultoria e Sistemas</h2>
+               <h3>Período: Junho de 2021 - Janeiro de 2022</h3>
+               <p>Primeiro contato profissional com programação. Aprendi e desenvolvi funcionalidades de um sistema legado, além de realizar sua manutenção.</p>
+            </div>
+         </section>
+         <section id="techs" class="grid grid-cols-3 gap-10 m-10 bg-purple-600">
+            <div class="flex flex-col items-center justify-end ">
+               <img width="20%" src="icons/css3.svg" alt="sass">
+               <span>CSS</span>
+            </div>
+            <div class="flex flex-col items-center justify-end">
+               <img width="20%" src="icons/docker.svg" alt="sass">
+               <span>Docker</span>
+            </div>
+            <div class="flex flex-col items-center justify-end"> 
+               <img width="20%" src="icons/git.svg" alt="sass">
+               <span>Git</span>
+            </div>
+            <div class="flex flex-col items-center justify-end"> 
+               <img width="20%" src="icons/html5.svg" alt="sass">
+               <span>HTML</span>
+            </div>
+            <div class="flex flex-col items-center justify-end"> 
+               <img width="20%" src="icons/javascript.svg" alt="sass">
+               <span>Javascript</span>
+            </div>
+            <div class="flex flex-col items-center justify-end"> 
+               <img width="20%" src="icons/nextjs.svg" alt="sass">
+               <span>NextJS</span>
+            </div>
+            <div class="flex flex-col items-center justify-end"> 
+               <img width="20%" src="icons/nodejs.svg" alt="sass">
+               <span>NodeJS</span>
+            </div>
+            <div class="flex flex-col items-center justify-end"> 
+               <img width="20%" src="icons/react.svg" alt="sass">
+               <span>ReactJS</span>
+            </div>
+            <div class="flex flex-col items-center justify-end"> 
+               <img width="20%" src="icons/typescript.svg" alt="sass">
+               <span>Typescript</span>
+            </div>
+            <div class="flex flex-col items-center justify-end "> 
+               <img width="20%" src="icons/tailwindcss.svg" alt="sass">
+               <span>Tailwind CSS</span>
+            </div>
+            <div class="flex flex-col items-center justify-end"> 
+               <img width="20%" src="icons/postgresql.svg" alt="sass">
+               <span>PostgreSQL</span>
+            </div>
+            <div class="flex flex-col items-center justify-end "> 
+               <img width="20%" src="icons/Microsoft_.NET.svg" alt="sass">
+               <span>.NET</span> 
+            </div>
+         </section>
+         <footer id="contact" class="flex justify-around border-4 border-t-indigo-500">
             <a href="https://github.com/paulomarian0" target="_blank">
-               <img width="50px" src="/src/icons/Octicons-mark-github.svg" alt="github">  
+            <img width="50px" src="/src/icons/github.svg" alt="github">  
             GitHub
             </a>
-
-               <a href="
+            <a href="
                https://www.linkedin.com/in/paulomarian0/
                " target="_blank">
-               <img width="50px" src="icons/linkedin-original.svg" alt="linkedin"
+            <img width="50px" src="icons/linkedin.svg" alt="linkedin"
                >
-               Linkedin
-               </a>
-
-               <a href="
+            Linkedin
+            </a>
+            <a href="
                mailto:paulomariano2501@gmail.com.br
                " target="_blank">
-               <img width="50px" src="icons/email.svg" alt="email">
-               Email
-               </a>
-               
-      </footer>
-      
-      
-      <script src="script.js"></script>
+            <img width="50px" src="icons/email.svg" alt="email">
+            Email
+            </a>
+         </footer>
+         <script src="script.js"></script>
+      </main>
+      <nav class="fixed flex flex-col top-0 right-1 justify-center h-full">
+         <ul class="bg-red-900">
+            <li class="border-blue-600 text-red-300" ><a  href="#home">Home</a></li>
+            <li class="border-blue-600 text-red-300"><a href="#about">About</a></li>
+            <li class="border-blue-600 text-red-300"><a href="#works">My Work</a></li>
+            <li class="border-blue-600 text-red-300"><a href="#techs">Tecjs</a></li>
+            <li class="border-blue-600 text-red-300"><a href="#contact">Contacts</a></li>
+         </ul>
+      </nav>
    </body>
-
-
 </html>
