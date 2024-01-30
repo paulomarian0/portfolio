@@ -4,12 +4,12 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link href="dist/output.css" rel="stylesheet">
-      <title>Document</title>
+      <title>Paulo Mariano - Portfólio</title>
    </head>
    <body class="flex">
       <main>
          <div class="absolute z-50">
-            <button class="bg-red-600 border-purple-700" onclick="toggleLanguage()">Change Language</button>
+            <button class="bg-red-600 border-purple-700" onclick="toggleLanguage()">EN</button>
          </div>
          <img  
             id="home"
@@ -20,53 +20,62 @@
          <div class="absolute top-1/4 text-white text-center justify-center w-full">
             <p class="text-6xl text-pink-300" id="name">Meu nome é Paulo Mariano</p>
             <p class="text-6xl" id="job">Desenvolvedor Web</p>
-            <button>Currículo
-            <img width="50px" src="icons/download-icon.svg" alt="download">
+            <button class="bg-red-700  p-2 rounded-xl">
+               <p class="flex text-center justify-center items-center gap-2">
+                  Currículo
+                  <img width="20px" src="icons/download-icon.svg" alt="download">
+               </p>
             </button>
+            
          </div>
-         <h1>About me:</h1>
-         <section id="about" class="flex text-center w-full bg-red-950 my-14">
+         <section id="about" class="flex text-center w-full my-14">
             <img width="25%"  src="icons/computer.gif" alt="Paulo Mariano"/>
-            <p class="flex m-auto text-center w-1/2 justify-start">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quisquam dolores eos! Iusto provident facere facilis voluptatibus adipisci dolore, nihil sunt laboriosam sit ducimus esse quis ad. Laborum, earum velit!
-               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum deserunt inventore veniam dolorum a eius. Magnam quisquam similique nemo facilis est veritatis quos ipsum temporibus quod? Dolores incidunt enim at.
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nostrum dicta, ex soluta blanditiis quasi facere saepe labore excepturi enim. Voluptate temporibus ut animi labore aliquid, ipsam nisi magni architecto.
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nam eos sint quo reprehenderit aut officiis, quis, officia eligendi eius illum suscipit labore error ut modi eum molestias dolor at?
-               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur veniam a dolorem cupiditate ea aspernatur, porro magnam id repudiandae suscipit aliquam commodi hic odit dignissimos. Voluptatum facere ipsa placeat tempora!
-            </p>
+            <div class="flex flex-col m-auto text-center w-1/2 justify-start ">
+               <h1 class="text-5xl">Sobre mim:</h1>
+               <p >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quisquam dolores eos! Iusto provident facere facilis voluptatibus adipisci dolore, nihil sunt laboriosam sit ducimus esse quis ad. Laborum, earum velit!
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum deserunt inventore veniam dolorum a eius. Magnam quisquam similique nemo facilis est veritatis quos ipsum temporibus quod? Dolores incidunt enim at.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nostrum dicta, ex soluta blanditiis quasi facere saepe labore excepturi enim. Voluptate temporibus ut animi labore aliquid, ipsam nisi magni architecto.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nam eos sint quo reprehenderit aut officiis, quis, officia eligendi eius illum suscipit labore error ut modi eum molestias dolor at?
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur veniam a dolorem cupiditate ea aspernatur, porro magnam id repudiandae suscipit aliquam commodi hic odit dignissimos. Voluptatum facere ipsa placeat tempora!
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur veniam a dolorem cupiditate ea aspernatur, porro magnam id repudiandae suscipit aliquam commodi hic odit dignissimos. Voluptatum facere ipsa placeat tempora!
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur veniam a dolorem cupiditate ea aspernatur, porro magnam id repudiandae suscipit aliquam commodi hic odit dignissimos. Voluptatum facere ipsa placeat tempora!
+               </p>
+            </div>
          </section>
          <h1 class="text-red" id="work">Work experience</h1>
          <section id="works" class="grid grid-cols-2 gap-6" >
-            <div class="bg-red-200">
-               <h1>Desenvolvedor FullStack</h1>
-               <h2>Empresa: ILUMEO</h2>
-               <h3>Período: Março de 2023 - Atualmente</h3>
+            <div class="bg-blue-500 shadow-lg shadow-blue-500/50 p-2">
+               <h1 class="text-2xl font-semibold">Desenvolvedor FullStack</h1>
+               <h2 class="text-lg font-medium">Empresa: ILUMEO</h2>
+               <h3>Março de 2023 - Atualmente</h3>
                <p>Desenvolvimento frontend com ReactJS, desenvolvimento backend com NodeJS</p>
             </div>
-            <div class="bg-red-600">
-               <h1>Desenvolvedor FrontEnd</h1>
-               <h2>Empresa: Ketra Soluções Inteligentes</h2>
+            <div class="bg-blue-500 shadow-lg shadow-blue-500/50 p-2">
+               <h1 class="text-2xl font-semibold">Desenvolvedor FrontEnd</h1>
+               <h2 class="text-lg font-medium">Empresa: Ketra Soluções Inteligentes</h2>
                <h3>Período: Agosto 2022 - Janeiro 2023</h3>
                <p>
                   Desenvolvimento de aplicações web com ReactJS, situacionalmente desenvolvimento de aplicações backend com .NET
                </p>
             </div>
-            <div class="bg-red-600">
-               <h1>Desenvolvedor FullStack</h1>
-               <h2>Empresa: Infosis Consultoria e Sistemas</h2>
+            <div class="bg-blue-500 shadow-lg shadow-blue-500/50 p-2">
+               <h1 class="text-2xl font-semibold">Desenvolvedor FullStack</h1>
+               <h2 class="text-lg font-medium">Empresa: Infosis Consultoria e Sistemas</h2>
                <h3>Período: Janeiro de 2022 - Agosto de 2022</h3>
                <p>
                   Desenvolvimento de aplicações e manutenção de um sistema legado utilizando ExtJS e .NET. Primeiro contato profissional com ReactJS, liderando uma equipe de frontend com 3 pessoas em um projeto internacional.            
                </p>
             </div>
-            <div class="bg-red-600">
-               <h1>Desenvolvedor FullStack - Estagiário</h1>
-               <h2>Empresa: Infosis Consultoria e Sistemas</h2>
+            <div class="bg-blue-500 shadow-lg shadow-blue-500/50 p-2">
+               <h1 class="text-2xl font-semibold">Desenvolvedor FullStack - Estagiário</h1>
+               <h2 class="text-lg font-medium">Empresa: Infosis Consultoria e Sistemas</h2>
                <h3>Período: Junho de 2021 - Janeiro de 2022</h3>
                <p>Primeiro contato profissional com programação. Aprendi e desenvolvi funcionalidades de um sistema legado, além de realizar sua manutenção.</p>
             </div>
          </section>
-         <section id="techs" class="grid grid-cols-3 gap-10 m-10 bg-purple-600">
+         <h1 class="text-3xl text-center font-semibold">Principais <span class="text-lime-300">tecnologias</span></h1>
+         <section id="techs" class="grid grid-cols-3 gap-10 my-4 p-4 ">
             <div class="flex flex-col items-center justify-end ">
                <img width="20%" src="icons/css3.svg" alt="sass">
                <span>CSS</span>
@@ -116,7 +125,7 @@
                <span>.NET</span> 
             </div>
          </section>
-         <footer id="contact" class="flex justify-around border-4 border-t-indigo-500">
+         <footer id="contact" class="flex justify-around border-4">
             <a href="https://github.com/paulomarian0" target="_blank">
             <img width="50px" src="/src/icons/github.svg" alt="github">  
             GitHub
@@ -128,9 +137,7 @@
                >
             Linkedin
             </a>
-            <a href="
-               mailto:paulomariano2501@gmail.com.br
-               " target="_blank">
+            <a href="mailto:paulomariano2501@gmail.com.br" target="_blank">
             <img width="50px" src="icons/email.svg" alt="email">
             Email
             </a>
@@ -142,7 +149,7 @@
             <li class="border-blue-600 text-red-300" ><a  href="#home">Home</a></li>
             <li class="border-blue-600 text-red-300"><a href="#about">About</a></li>
             <li class="border-blue-600 text-red-300"><a href="#works">My Work</a></li>
-            <li class="border-blue-600 text-red-300"><a href="#techs">Tecjs</a></li>
+            <li class="border-blue-600 text-red-300"><a href="#techs">Techs</a></li>
             <li class="border-blue-600 text-red-300"><a href="#contact">Contacts</a></li>
          </ul>
       </nav>
