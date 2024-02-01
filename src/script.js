@@ -17,7 +17,7 @@ function toggleMode() {
     const body = document.body;
     const modeBtn = document.getElementById("modeBtn");
     const isDark = body.classList.toggle("dark");
-    modeBtn.innerHTML = isDark ? getMoonSVG() : getSunSVG();
+    modeBtn.innerHTML = isDark ? getSunSVG():  getMoonSVG()
 }
 
 function getMoonSVG() {
