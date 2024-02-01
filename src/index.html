@@ -7,9 +7,11 @@
         <title>Paulo Mariano - Portfólio</title>
     </head>
     <body>
-        <header class="fixed flex gap-6 text-center w-full justify-between px-10 py-2 bg-white">
+        <section class="bg-white dark:bg-zinc-900">
+
+        <header class="fixed flex gap-6 text-center w-full justify-between px-10 py-2 bg-white dark:bg-zinc-900">
             <button id="languageBtn" onclick="toggleLanguage()">EN</button>
-            <button id="modeBtn" onclick="toggleMode()">
+            <button  id="modeBtn" onclick="toggleMode()">
                 <img src="icons/moon.svg" alt="moon" width="20px" />
             </button>
             <ul class="flex gap-20 items-center">
@@ -34,7 +36,7 @@
         </header>
 
         <section id="home" class="flex justify-between">
-            <div class="w-full items-start flex justify-center flex-col mt-32 px-36 text-blue-950">
+            <div class="w-full items-start flex justify-center flex-col mt-32 px-36 text-blue-950 dark:text-zinc-300">
                 <p class="text-6xl font-semibold">Hi 👋,</p>
                 <p class="bg-gradient-to-r from-sky-500 to-pink-600 text-transparent bg-clip-text text-6xl my-1 font-bold">
                     My name is Paulo
@@ -47,61 +49,61 @@
         </section>
 
         <main class="mt-32">
-            <h1 class="text-5xl text-center font-semibold text-slate-700">My Tech Stack</h1>
-            <span class="my-6 text-2xl flex justify-center text-stone-600 font-medium">Technologies I've been working with</span>
+            <h1 class="text-5xl text-center font-semibold text-slate-700 dark:text-stone-300">My Tech Stack</h1>
+            <span class="my-6 text-2xl flex justify-center text-stone-600 font-medium dark:text-neutral-400">Technologies I've been working with</span>
             <section id="techs" class="grid grid-cols-4 gap-10 p-4 my-10">
                 <div class="flex flex-col items-center justify-end">
                     <img width="20%" src="icons/css3.svg" alt="sass" />
-                    <span>CSS</span>
+                    <span class="dark:text-white">CSS</span>
                 </div>
                 <div class="flex flex-col items-center justify-end">
                     <img width="20%" src="icons/docker.svg" alt="sass" />
-                    <span>Docker</span>
+                    <span class="dark:text-white">Docker</span>
                 </div>
                 <div class="flex flex-col items-center justify-end">
                     <img width="20%" src="icons/git.svg" alt="sass" />
-                    <span>Git</span>
+                    <span class="dark:text-white">Git</span>
                 </div>
                 <div class="flex flex-col items-center justify-end">
                     <img width="20%" src="icons/html5.svg" alt="sass" />
-                    <span>HTML</span>
+                    <span class="dark:text-white">HTML</span>
                 </div>
                 <div class="flex flex-col items-center justify-end">
                     <img width="20%" src="icons/javascript.svg" alt="sass" />
-                    <span>Javascript</span>
+                    <span class="dark:text-white">Javascript</span>
                 </div>
                 <div class="flex flex-col items-center justify-end">
                     <img width="20%" src="icons/nextjs.svg" alt="sass" />
-                    <span>NextJS</span>
+                    <span class="dark:text-white">NextJS</span>
                 </div>
                 <div class="flex flex-col items-center justify-end">
                     <img width="20%" src="icons/nodejs.svg" alt="sass" />
-                    <span>NodeJS</span>
+                    <span class="dark:text-white">NodeJS</span>
                 </div>
                 <div class="flex flex-col items-center justify-end">
                     <img width="20%" src="icons/react.svg" alt="sass" />
-                    <span>ReactJS</span>
+                    <span class="dark:text-white">ReactJS</span>
                 </div>
                 <div class="flex flex-col items-center justify-end">
                     <img width="20%" src="icons/typescript.svg" alt="sass" />
-                    <span>Typescript</span>
+                    <span class="dark:text-white">Typescript</span>
                 </div>
                 <div class="flex flex-col items-center justify-end">
                     <img width="20%" src="icons/tailwindcss.svg" alt="sass" />
-                    <span>Tailwind CSS</span>
+                    <span class="dark:text-white">Tailwind CSS</span>
                 </div>
                 <div class="flex flex-col items-center justify-end">
                     <img width="20%" src="icons/postgresql.svg" alt="sass" />
-                    <span>PostgreSQL</span>
+                    <span class="dark:text-white">PostgreSQL</span>
                 </div>
                 <div class="flex flex-col items-center justify-end">
                     <img width="20%" src="icons/Microsoft_.NET.svg" alt="sass" />
-                    <span>.NET</span>
+                    <span class="dark:text-white">.NET</span>
                 </div>
             </section>
 
             <section id="about" class="px-36 pt-10">
-                <h1 class="text-6xl font-semibold text-blue-950 mb-10">About me:</h1>
+                <h1 class="text-6xl font-semibold text-blue-950 mb-10 dark:text-stone-300">About me:</h1>
                 <p class="text-stone-500 mb-10">
                     The Generator App is an online tool that helps you to export ready-made templates ready to work as your future website. It helps you to combine slides, panels and other components and export it as a set of static files:
                     HTML/CSS/JS. The Generator App is an online tool that helps you to export ready-made templates ready to work as your future website. It helps you to combine slides, panels and other components and export it as a set of
@@ -109,7 +111,7 @@
                     as a set of static files: HTML/CSS/JS.
                 </p>
 
-                <h1 class="text-6xl font-semibold text-blue-950 mb-10">Work Experience</h1>
+                <h1 class="text-6xl font-semibold text-blue-950 mb-10 dark:text-stone-300">Work Experience</h1>
 
                 <div class="flex flex-col divide-y-2 divide-dashed space-y-4 border-b-2 border-dashed">
                     <div class="flex flex-col gap-3">
@@ -181,7 +183,7 @@
                     </div>
                 </div>
 
-                <h1 class="text-6xl font-semibold text-blue-950 mt-10">Education</h1>
+                <h1 class="text-6xl font-semibold text-blue-950 mt-10 dark:text-stone-300">Education</h1>
 
                 <section class="flex flex-col divide-y-2 divide-dashed space-y-4 border-b-2 border-dashed">
                     <div class="flex flex-col gap-3 mt-6">
@@ -213,7 +215,7 @@
                 </section>
             </section>
 
-            <h1 class="text-6xl font-semibold text-blue-950 mt-16 px-36">Onde me Encontrar?</h1>
+            <h1 class="text-6xl font-semibold text-blue-950 mt-16 px-36 dark:text-stone-300">Onde me Encontrar?</h1>
             <footer id="contact" class="justify-between mt-20 px-36 mb-20">
                 <h1 class="text-6xl text-violet-950 font-bold">
                     For any questions please mail me:
@@ -243,6 +245,8 @@
             </footer>
 
             <script src="script.js"></script>
+        </section>
+
         </main>
     </body>
 </html>
