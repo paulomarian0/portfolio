@@ -8,14 +8,14 @@
     </head>
     <body>
         <header class="fixed flex gap-6 text-center w-full justify-between px-10 py-2 bg-white">
-            <button class="bg-red-600 border-purple-700" onclick="toggleLanguage()">Change Laguage</button>
+            <button id="languageBtn" onclick="toggleLanguage()">EN</button>
+            <button id="modeBtn" onclick="toggleMode()">
+                <img src="icons/moon.svg" alt="moon" width="20px" />
+            </button>
             <ul class="flex gap-20 items-center">
                 <li class="text-stone-500 font-medium"><a href="#home">Home</a></li>
                 <li class="text-stone-500 font-medium"><a href="#about">About</a></li>
-                <li class="text-stone-500 font-medium"><a href="#works">My Work</a></li>
-                <li class="text-stone-500 font-medium"><a href="#techs">Techs</a></li>
                 <li class="text-stone-500 font-medium"><a href="#contact">Contacts</a></li>
-
                 <li>
                     <div class="flex gap-4">
                         <a href="https://www.github.com/paulomarian0" target="_blank">
@@ -100,7 +100,7 @@
                 </div>
             </section>
 
-            <section id="about" class="px-36">
+            <section id="about" class="px-36 pt-10">
                 <h1 class="text-6xl font-semibold text-blue-950 mb-10">About me:</h1>
                 <p class="text-stone-500 mb-10">
                     The Generator App is an online tool that helps you to export ready-made templates ready to work as your future website. It helps you to combine slides, panels and other components and export it as a set of static files:
