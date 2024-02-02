@@ -9,14 +9,17 @@
     <body>
         <section class="bg-white dark:bg-zinc-900">
          <header class="fixed flex gap-6 text-center w-full justify-between px-10 py-2 bg-white dark:bg-zinc-900">
-            <button id="languageBtn" onclick="toggleLanguage()">EN</button>
-            <button id="modeBtn" onclick="toggleMode()">
-                <img src="icons/moon.svg" alt="moon" width="22px" />
-            </button>
+            <div class="flex gap-10">
+
+                <button id="modeBtn" onclick="toggleMode()">
+                    <img src="icons/moon.svg" alt="moon" width="22px" />
+                </button>
+                <button id="languageBtn" onclick="toggleLanguage()">EN</button>
+            </div>
             <ul class="flex gap-20 items-center">
                 <li class="text-stone-500 font-medium dark:text-zinc-50"><a href="#home" id="homeLink">Home</a></li>
-                <li class="text-stone-500 font-medium dark:text-zinc-50"><a href="#about" id="aboutLink">About</a></li>
-                <li class="text-stone-500 font-medium dark:text-zinc-50"><a href="#contact" id="contactLink">Contacts</a></li>
+                <li id="About" class="text-stone-500 font-medium dark:text-zinc-50"><a href="#about" id="aboutLink">About</a></li>
+                <li id="Contact" class="text-stone-500 font-medium dark:text-zinc-50"><a href="#contact" id="contactLink">Contacts</a></li>
                 <li>
                     <div class="flex gap-4">
                         <a href="https://www.github.com/paulomarian0" target="_blank">

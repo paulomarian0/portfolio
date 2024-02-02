@@ -4,6 +4,8 @@ let language = "EN";
 function toggleLanguage() {
     if (language === "EN") {
         language = "PT";
+        About.textContent = "Sobre";
+        Contact.textContent = "Contato";
         hiText.textContent = "Olá! 👋,";
         myNameIs.textContent = "Meu nome é Paulo";
         imASoftwareDeveloper.textContent = "Sou desenvolvedor de software";
@@ -28,6 +30,8 @@ function toggleLanguage() {
         or.textContent = "ou";
     } else {
         language = "EN";
+        About.textContent = "About";
+        Contact.textContent = "Contacts";
         hiText.textContent = "Hi! 👋,";
         myNameIs.textContent = "My name is Paulo";
         imASoftwareDeveloper.textContent = "I'm a Software Developer";
