@@ -23,7 +23,7 @@ function toggleLanguage() {
         bachelorTitle.textContent = "Bacharelado em Ciência da Computação";
         postgraduateTitle.textContent = "Pós-Graduação em Engenharia de Software";
         findMe.textContent = "Entre em contato:";
-        anyQuestions.textContent = "Para qualquer dúvida, entre em contato comigo pelo e-mail:";
+        anyQuestions.textContent = "Para qualquer dúvida, mande um e-mail:";
         findMeOn.textContent = "me encontre em:";
         or.textContent = "ou";
     } else {
