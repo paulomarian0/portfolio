@@ -611,6 +611,10 @@ video {
   width: 100%;
 }
 
+.grow {
+  flex-grow: 1;
+}
+
 .select-none {
   -webkit-user-select: none;
      -moz-user-select: none;
