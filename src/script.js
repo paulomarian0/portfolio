@@ -14,7 +14,7 @@ function toggleLanguage() {
         aboutTitle.textContent = "Sobre mim:";
         aboutMeText.textContent = "Sou um desenvolvedor de software com experiência em desenvolvimento web e mobile. Atualmente, estou trabalhando com tecnologias como React, React Native, Node.js, TypeScript, entre outras. Estou sempre em busca de novos desafios e oportunidades para aprender e crescer.";
         workExperienceTitle.textContent = "Experiência Profissional:";
-        developerIntern.textContent = "Full Stack Developer - Estágio";
+        developerIntern.textContent = "Estágiário Desenvolvedor";
         intern.textContent = "Estagiário";
         ilumeoDescription.textContent = "Desenvolvimento de aplicações web e mobile, utilizando tecnologias como React, React Native, Node.js, TypeScript, entre outras.";
         ketraDescription.textContent = "Desenvolvimento de aplicações web e mobile, utilizando tecnologias como React, React Native, Node.js, TypeScript, entre outras.";
@@ -40,7 +40,7 @@ function toggleLanguage() {
         aboutTitle.textContent = "About me:";
         aboutMeText.textContent = "I'm a software developer with experience in web and mobile development. Currently, I'm working with technologies like React, React Native, Node.js, TypeScript, among others. I'm always looking for new challenges and opportunities to learn and grow.";
         workExperienceTitle.textContent = "Work Experience:";
-        developerIntern.textContent = "Full Stack Developer - Intern";
+        developerIntern.textContent = "Intern Developer";
         intern.textContent = "Intern";
         ilumeoDescription.textContent = "Development of web and mobile applications, using technologies like React, React Native, Node.js, TypeScript, among others.";
         ketraDescription.textContent = "Development of web and mobile applications, using technologies like React, React Native, Node.js, TypeScript, among others.";
