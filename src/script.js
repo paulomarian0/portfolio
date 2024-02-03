@@ -1,7 +1,10 @@
 let languageBtn = document.getElementById("languageBtn");
 let language = "EN";
 
+
+
 function toggleLanguage() {
+    languageBtn.textContent = language;
     if (language === "EN") {
         language = "PT";
         About.textContent = "Sobre";
@@ -55,7 +58,7 @@ function toggleLanguage() {
         or.textContent = "or";
         findMeOn.textContent = "find me on:";
     }
-    languageBtn.textContent = language;
+
 }
 
 
