@@ -1,3 +1,4 @@
+import Education from "@/components/Education";
 import Experiences from "@/components/Experiences";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -14,6 +15,7 @@ export default function Home() {
         <Stacks />
         {/* <Projects /> */}
         <Experiences />
+        <Education />
       </main>
       <Footer />
     </div>
