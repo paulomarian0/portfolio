@@ -1,5 +1,6 @@
 import { differenceInYears } from "date-fns";
 import Image from "next/image";
+import DownloadButton from "./ui/DownloadButton";
 
 export default function ProfileIntro() {
   const birthDate = new Date(2001, 3, 25);
@@ -23,17 +24,12 @@ export default function ProfileIntro() {
       </h1>
       <p className="text-gray-400 mb-6 sm:mb-8 text-sm sm:text-base">
         I'm {age} years old, a fullstack developer with a Bachelor's in Computer
-        Science. I create web applications using React, Node.js, and TypeScript.
-        I love exploring new tech, contributing to open-source, and reading
-        books.
+        Science. I create web applications using React, .NET, Node.js, and
+        TypeScript. I love exploring new tech, contributing to open-source, and
+        reading books.
       </p>
       <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-8">
-        <button type="button" className="bg-white text-black py-2 px-4 rounded">
-          Get In Touch
-        </button>
-        <button type="button" className="border border-white py-2 px-4 rounded">
-          Download CV
-        </button>
+        <DownloadButton />
       </div>
     </div>
   );

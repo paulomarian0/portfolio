@@ -8,11 +8,11 @@ import Stacks from "@/components/Stacks";
 export default function Home() {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <main className="container mx-auto text-center p-16">
         <ProfileIntro />
         <Stacks />
-        <Projects />
+        {/* <Projects /> */}
         <Experiences />
       </main>
       <Footer />
