@@ -1,33 +1,55 @@
-const educations = [
-  {
-    institution: "UVV - Universidade Vila Velha",
-    date: "02/2019 - 11/2022",
-    title: "Bachelor's Degree in Computer Science",
-  },
-  {
-    title: "Postgraduate in Software Engineering",
-    institution: "Descomplica Faculdade Digital",
-    date: "06/2023 - 01/2024",
-  },
-];
+"use client";
+import { motion } from "framer-motion";
 
 export default function Education() {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { staggerChildren: 0.2 },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  };
+
   return (
-    <section className="mb-16">
-      <h2 className="text-2xl font-bold text-blue-500 mb-8">EDUCATION</h2>
-      <div className="text-left max-w-2xl mx-auto">
-        <div className="mb-8">
-          {educations.map((education) => (
-            <div className="mb-8">
-              <h3 className="text-xl font-bold">
-                <i className="fab fa-google text-2xl" /> {education.institution}
-              </h3>
-              <p className="text-gray-400 mb-4">{education.date}</p>
-              <p className="text-gray-500">{education.title}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
+    <motion.section
+      className="mb-16"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.3 }}
+      variants={containerVariants}
+    >
+      <motion.h2
+        className="text-2xl font-bold text-blue-500 mb-8"
+        variants={itemVariants}
+      >
+        EDUCATION
+      </motion.h2>
+      <motion.div
+        className="text-left max-w-2xl mx-auto"
+        variants={containerVariants}
+      >
+        <motion.div className="mb-8" variants={itemVariants}>
+          <h3 className="text-xl font-bold">
+            <i className="fab fa-google text-2xl" /> UVV - Universidade Vila
+            Velha
+          </h3>
+          <p className="text-gray-400 mb-4">02/2019 - 11/2022</p>
+          <p className="text-gray-500">Bachelor's Degree in Computer Science</p>
+        </motion.div>
+        <motion.div className="mb-8" variants={itemVariants}>
+          <h3 className="text-xl font-bold">
+            <i className="fab fa-google text-2xl" /> Descomplica Faculdade
+            Digital
+          </h3>
+          <p className="text-gray-400 mb-4">06/2023 - 01/2024</p>
+          <p className="text-gray-500">Postgraduate in Software Engineering</p>
+        </motion.div>
+      </motion.div>
+    </motion.section>
   );
 }
