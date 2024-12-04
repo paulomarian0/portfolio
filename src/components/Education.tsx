@@ -38,9 +38,10 @@ export default function Education() {
           className="mb-8 p-6 border border-gray-600 shadow-md shadow-gray-900 rounded-lg bg-[#161616] transition-shadow duration-300"
         >
           <h3 className="text-xl font-bold">
-            <i className="fab fa-google text-2xl" /> UVV - Universidade Vila
-            Velha
+            <i className="fab fa-google text-2xl" /> Bacheelor Degre in Computer
+            Science
           </h3>
+          <p className="text-gray-500">UVV - Universidade Vila Velha</p>
           <p className="text-gray-400 mb-4">02/2019 - 11/2022</p>
           <p className="text-gray-300">
             Bachelor's Degree in Computer Science. During my time at UVV, I
@@ -55,9 +56,10 @@ export default function Education() {
           className="mb-8 p-6 border border-gray-600 shadow-md shadow-gray-900 rounded-lg bg-[#161616] transition-shadow duration-300"
         >
           <h3 className="text-xl font-bold">
-            <i className="fab fa-google text-2xl" /> Descomplica Faculdade
-            Digital
+            <i className="fab fa-google text-2xl" />
+            Postgraduate in Software Engineering
           </h3>
+          <p className="text-gray-500">Descomplica Faculdade Digital</p>
           <p className="text-gray-400 mb-4">06/2023 - 01/2024</p>
           <p className="text-gray-300">
             Postgraduate in Software Engineering. This program has allowed me to
