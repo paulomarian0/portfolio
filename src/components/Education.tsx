@@ -24,7 +24,7 @@ export default function Education() {
       variants={containerVariants}
     >
       <motion.h2
-        className="text-2xl font-bold text-blue-500 mb-8"
+        className="text-2xl font-bold text-gray-200 mb-8"
         variants={itemVariants}
       >
         EDUCATION
@@ -33,21 +33,40 @@ export default function Education() {
         className="text-left max-w-2xl mx-auto"
         variants={containerVariants}
       >
-        <motion.div className="mb-8" variants={itemVariants}>
+        <motion.div
+          variants={itemVariants}
+          className="mb-8 p-6 border border-gray-600 shadow-md shadow-gray-900 rounded-lg bg-[#161616] transition-shadow duration-300"
+        >
           <h3 className="text-xl font-bold">
             <i className="fab fa-google text-2xl" /> UVV - Universidade Vila
             Velha
           </h3>
           <p className="text-gray-400 mb-4">02/2019 - 11/2022</p>
-          <p className="text-gray-500">Bachelor's Degree in Computer Science</p>
+          <p className="text-gray-500">
+            Bachelor's Degree in Computer Science. During my time at UVV, I
+            focused on developing a strong foundation in computer science
+            principles, including algorithms, data structures, and software
+            engineering. I also participated in various projects and internships
+            that provided practical experience in the field.
+          </p>
         </motion.div>
-        <motion.div className="mb-8" variants={itemVariants}>
+        <motion.div
+          variants={itemVariants}
+          className="mb-8 p-6 border border-gray-600 shadow-md shadow-gray-900 rounded-lg bg-[#161616] transition-shadow duration-300"
+        >
           <h3 className="text-xl font-bold">
             <i className="fab fa-google text-2xl" /> Descomplica Faculdade
             Digital
           </h3>
           <p className="text-gray-400 mb-4">06/2023 - 01/2024</p>
-          <p className="text-gray-500">Postgraduate in Software Engineering</p>
+          <p className="text-gray-500">
+            Postgraduate in Software Engineering. This program has allowed me to
+            deepen my knowledge in software development methodologies, advanced
+            programming techniques, and project management. I have worked on
+            several capstone projects that simulate real-world software
+            development scenarios, enhancing my problem-solving and teamwork
+            skills.
+          </p>
         </motion.div>
       </motion.div>
     </motion.section>

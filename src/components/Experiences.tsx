@@ -59,7 +59,7 @@ export default function Experiences() {
       variants={containerVariants}
     >
       <motion.h2
-        className="text-2xl font-bold text-blue-500 mb-8"
+        className="text-2xl font-bold text-gray-200 mb-8"
         variants={itemVariants}
       >
         EXPERIENCE
@@ -71,16 +71,17 @@ export default function Experiences() {
         {experiences.map((experience) => (
           <motion.div
             key={experience.id}
-            className="mb-8"
+            className="mb-8 p-6 border border-gray-600 shadow-md shadow-gray-900 rounded-lg bg-[#161616] transition-shadow duration-300"
             variants={itemVariants}
           >
-            <h3 className="text-xl font-bold flex">
-              <i className="fab fa-google text-2xl" /> {experience.jobTitle}
+            <h3 className="text-xl font-bold flex items-center text-white">
+              {experience.jobTitle}
             </h3>
+            <p className="text-gray-500">{experience.company}</p>
             <p className="text-gray-400 mb-4">
               {experience.startDate} - {experience.endDate || "Present"}
             </p>
-            <p className="text-gray-500">{experience.description}</p>
+            <p className="text-gray-300">{experience.description}</p>
           </motion.div>
         ))}
       </motion.div>
