@@ -42,7 +42,7 @@ export default function Education() {
             Velha
           </h3>
           <p className="text-gray-400 mb-4">02/2019 - 11/2022</p>
-          <p className="text-gray-500">
+          <p className="text-gray-300">
             Bachelor's Degree in Computer Science. During my time at UVV, I
             focused on developing a strong foundation in computer science
             principles, including algorithms, data structures, and software
@@ -59,7 +59,7 @@ export default function Education() {
             Digital
           </h3>
           <p className="text-gray-400 mb-4">06/2023 - 01/2024</p>
-          <p className="text-gray-500">
+          <p className="text-gray-300">
             Postgraduate in Software Engineering. This program has allowed me to
             deepen my knowledge in software development methodologies, advanced
             programming techniques, and project management. I have worked on
