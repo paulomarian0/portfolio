@@ -1,4 +1,5 @@
 "use client";
+import { v4 as uuidv4 } from "uuid";
 import { motion } from "framer-motion";
 
 const experiences = [
@@ -101,8 +102,8 @@ export default function Experiences() {
               {experience.startDate} - {experience.endDate || "Present"}
             </p>
             <ol className="text-gray-300 list-disc pl-6">
-              {experience.description.map((item) => (
-                <li className="mb-2" key={item}>
+              {experience.description.map((item, index) => (
+                <li className="mb-2" key={uuidv4()}>
                   {item}
                 </li>
               ))}
