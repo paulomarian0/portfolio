@@ -1,5 +1,4 @@
 "use client";
-import { v4 as uuidv4 } from "uuid";
 import { motion } from "framer-motion";
 
 const experiences = [
@@ -62,12 +61,12 @@ const experiences = [
 export default function Experiences() {
   const containerVariants = {
     hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { staggerChildren: 0.2 } },
+    visible: { opacity: 1, transition: { staggerChildren: 0.5 } },
   };
 
   const itemVariants = {
     hidden: { opacity: 0, x: -50 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.6 } },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
   };
 
   return (
@@ -76,23 +75,15 @@ export default function Experiences() {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
-      variants={containerVariants}
     >
-      <motion.h2
-        className="text-2xl font-bold text-gray-200 mb-8"
-        variants={itemVariants}
-      >
+      <motion.h2 className="text-2xl font-bold text-gray-200 mb-8">
         EXPERIENCE
       </motion.h2>
-      <motion.div
-        className="text-left max-w-2xl mx-auto"
-        variants={containerVariants}
-      >
+      <motion.div className="text-left w-full max-w-2xl mx-auto">
         {experiences.map((experience) => (
           <motion.div
             key={experience.id}
-            className="mb-8 p-6 border border-gray-600 shadow-md shadow-gray-900 rounded-lg bg-[#161616] transition-shadow duration-300"
-            variants={itemVariants}
+            className="mb-8 p-6 border border-gray-600 shadow-md shadow-gray-900 rounded-lg bg-[#161616] transition-shadow duration-300 overflow-auto"
           >
             <h3 className="text-xl font-bold flex items-center text-white">
               {experience.jobTitle}
@@ -102,8 +93,8 @@ export default function Experiences() {
               {experience.startDate} - {experience.endDate || "Present"}
             </p>
             <ol className="text-gray-300 list-disc pl-6">
-              {experience.description.map((item, index) => (
-                <li className="mb-2" key={uuidv4()}>
+              {experience.description.map((item) => (
+                <li className="mb-2" key={item}>
                   {item}
                 </li>
               ))}

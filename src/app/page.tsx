@@ -1,15 +1,15 @@
-import Education from "@/components/Education";
-import Experiences from "@/components/Experiences";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import ProfileIntro from "@/components/ProfileIntro";
-import Projects from "@/components/Projects";
-import Stacks from "@/components/Stacks";
+import dynamic from "next/dynamic";
+
+const Education = dynamic(() => import("@/components/Education"));
+const Experiences = dynamic(() => import("@/components/Experiences"));
+const Footer = dynamic(() => import("@/components/Footer"));
+const ProfileIntro = dynamic(() => import("@/components/ProfileIntro"));
+const Projects = dynamic(() => import("@/components/Projects"));
+const Stacks = dynamic(() => import("@/components/Stacks"));
 
 export default function Home() {
   return (
     <div>
-      {/* <Header /> */}
       <main className="container mx-auto text-center p-16">
         <ProfileIntro />
         <Stacks />

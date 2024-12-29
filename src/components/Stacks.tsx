@@ -50,8 +50,8 @@ export default function Stacks() {
         className="grid grid-cols-5 gap-8 justify-items-center"
         variants={containerVariants}
       >
-        {icons.map(({ Icon }) => (
-          <motion.div variants={itemVariants}>
+        {icons.map(({ Icon, name }) => (
+          <motion.div variants={itemVariants} key={name}>
             <Icon className="text-4xl" />
           </motion.div>
         ))}
