@@ -69,7 +69,7 @@ export default function Experiences() {
     visible: { opacity: 1, x: 0, transition: { duration: 0.6 } },
   };
 
-  const isMobile = typeof window !== "undefined" && window.innerWidth < 436;
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 500;
 
   return (
     <motion.section
