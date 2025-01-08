@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import { isMobile } from "react-device-detect"; // Import the isMobile function
 
 const experiences = [
   {
@@ -61,12 +62,12 @@ const experiences = [
 export default function Experiences() {
   const containerVariants = {
     hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { staggerChildren: 0.5 } },
+    visible: { opacity: 1, transition: { staggerChildren: 0.2 } },
   };
 
   const itemVariants = {
     hidden: { opacity: 0, x: -50 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.6 } },
   };
 
   return (
@@ -75,11 +76,18 @@ export default function Experiences() {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
+      variants={!isMobile ? containerVariants : {}}
     >
-      <motion.h2 className="text-2xl font-bold text-gray-200 mb-8">
+      <motion.h2
+        className="text-2xl font-bold text-gray-200 mb-8"
+        variants={!isMobile ? itemVariants : {}}
+      >
         EXPERIENCE
       </motion.h2>
-      <motion.div className="text-left w-full max-w-2xl mx-auto">
+      <motion.div
+        className="text-left max-w-2xl mx-auto"
+        variants={!isMobile ? containerVariants : {}}
+      >
         {experiences.map((experience) => (
           <motion.div
             key={experience.id}
