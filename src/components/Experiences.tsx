@@ -76,17 +76,17 @@ export default function Experiences() {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
-      variants={!isMobile ? containerVariants : {}}
+      variants={!isMobile ? containerVariants : undefined}
     >
       <motion.h2
         className="text-2xl font-bold text-gray-200 mb-8"
-        variants={!isMobile ? itemVariants : {}}
+        variants={!isMobile ? itemVariants : undefined}
       >
         EXPERIENCE
       </motion.h2>
       <motion.div
         className="text-left max-w-2xl mx-auto"
-        variants={!isMobile ? containerVariants : {}}
+        variants={!isMobile ? containerVariants : undefined}
       >
         {experiences.map((experience) => (
           <motion.div
