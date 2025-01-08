@@ -1,6 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import { isMobile } from "react-device-detect"; // Import the isMobile function
 
 const experiences = [
   {
@@ -69,6 +68,8 @@ export default function Experiences() {
     hidden: { opacity: 0, x: -50 },
     visible: { opacity: 1, x: 0, transition: { duration: 0.6 } },
   };
+
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 436;
 
   return (
     <motion.section
