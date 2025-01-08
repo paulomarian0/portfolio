@@ -22,36 +22,17 @@ const icons = [
 ];
 
 export default function Stacks() {
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: { staggerChildren: 0.2 },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, scale: 0.8 },
-    visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
-  };
-
   return (
     <motion.div
       className="mb-16"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
-      variants={containerVariants}
     >
-      <motion.h2 className="text-xl font-bold mb-4" variants={itemVariants}>
-        EXPERIENCE WITH
-      </motion.h2>
-      <motion.div
-        className="grid grid-cols-5 gap-8 justify-items-center"
-        variants={containerVariants}
-      >
+      <motion.h2 className="text-xl font-bold mb-4">EXPERIENCE WITH</motion.h2>
+      <motion.div className="grid grid-cols-5 gap-8 justify-items-center">
         {icons.map(({ Icon, name }) => (
-          <motion.div variants={itemVariants} key={name}>
+          <motion.div key={name}>
             <Icon className="text-4xl" />
           </motion.div>
         ))}

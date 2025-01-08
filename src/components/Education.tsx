@@ -2,41 +2,18 @@
 import { motion } from "framer-motion";
 
 export default function Education() {
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: { staggerChildren: 0.2 },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-  };
-
   return (
     <motion.section
       className="mb-16"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
-      variants={containerVariants}
     >
-      <motion.h2
-        className="text-2xl font-bold text-gray-200 mb-8"
-        variants={itemVariants}
-      >
+      <motion.h2 className="text-2xl font-bold text-gray-200 mb-8">
         EDUCATION
       </motion.h2>
-      <motion.div
-        className="text-left max-w-2xl mx-auto"
-        variants={containerVariants}
-      >
-        <motion.div
-          variants={itemVariants}
-          className="mb-8 p-6 border border-gray-600 shadow-md shadow-gray-900 rounded-lg bg-[#161616] transition-shadow duration-300"
-        >
+      <motion.div className="text-left max-w-2xl mx-auto">
+        <motion.div className="mb-8 p-6 border border-gray-600 shadow-md shadow-gray-900 rounded-lg bg-[#161616] transition-shadow duration-300">
           <h3 className="text-xl font-bold">
             <i className="fab fa-google text-2xl" /> Bacheelor Degre in Computer
             Science
@@ -51,10 +28,7 @@ export default function Education() {
             that provided practical experience in the field.
           </p>
         </motion.div>
-        <motion.div
-          variants={itemVariants}
-          className="mb-8 p-6 border border-gray-600 shadow-md shadow-gray-900 rounded-lg bg-[#161616] transition-shadow duration-300"
-        >
+        <motion.div className="mb-8 p-6 border border-gray-600 shadow-md shadow-gray-900 rounded-lg bg-[#161616] transition-shadow duration-300">
           <h3 className="text-xl font-bold">
             <i className="fab fa-google text-2xl" />
             Postgraduate in Software Engineering
