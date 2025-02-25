@@ -1,46 +1,37 @@
 "use client";
 import { motion } from "framer-motion";
+import { FiExternalLink } from "react-icons/fi";
 
 export default function Projects() {
 	return (
 		<motion.section className="mb-16" initial="hidden" animate="visible">
-			<motion.h2 className="text-2xl font-bold text-orange-500 mb-8">
+			<motion.h2 className="text-2xl font-bold text-orange-500 mb-8 text-center">
 				PROJECTS
 			</motion.h2>
 
 			<motion.div className="flex justify-center space-x-8">
-				{/* <motion.div className="bg-gray-800 p-4 rounded-lg">
-          <a
-            href="https://rena-fast.vercel.app"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <motion.img
-              src="/renafast-logo.png"
-              alt="Project 1 thumbnail"
-              className="rounded mb-4 w-[300px] h-[200px] bg-gray-900"
-            />
-            <motion.h3 className="text-xl font-bold">RENAFAST</motion.h3>
-            <motion.p className="text-gray-400">Photo renaming app</motion.p>
-          </a>
-        </motion.div> */}
-				<motion.div className="bg-gray-800 p-4 rounded-lg max-w-xs mx-auto flex flex-col items-center">
+				<motion.div 
+					className="bg-gray-800 hover:bg-gray-700 transition-colors duration-300 p-6 rounded-xl max-w-sm shadow-lg border border-gray-700"
+					whileHover={{ scale: 1.02 }}
+					transition={{ type: "spring", stiffness: 300 }}
+				>
 					<a
 						href="https://vercel-ui-sdk.vercel.app"
 						target="_blank"
 						rel="noreferrer"
+						className="block"
 					>
-						<img
-							src="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png"
-							alt="Project 2 thumbnail"
-							className="rounded mb-2 w-full h-auto max-h-[250px] max-w-xs bg-gray-900"
-						/>
-						<h3 className="text-xl font-bold text-white text-center">
-							VERCEL UI SDK WEATHER FORECAST{" "}
-						</h3>
-						<p className="text-gray-400 text-center">
-							Weather forecast application using artificial intelligence to see
-							the weather forecast of a city, using Vercel UI SDK
+						<div className="flex items-center justify-center gap-2 mb-4">
+							<h3 className="text-2xl font-bold text-white hover:text-orange-500 transition-colors duration-300 text-start">
+								Weather AI
+							</h3>
+							<FiExternalLink className="text-orange-500 text-xl" />
+						</div>
+						<p className="text-gray-300 leading-relaxed text-start">
+							An intelligent weather application powered by Vercel AI SDK and OpenAI. 
+							Get detailed weather forecasts with natural language responses, 
+							temperature trends, and weather conditions for any city. Experience 
+							weather forecasting enhanced by AI.
 						</p>
 					</a>
 				</motion.div>
