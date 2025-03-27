@@ -6,6 +6,13 @@ export function Hero() {
 		document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
 	};
 
+	const handleDownloadCV = () => {
+		const link = document.createElement("a");
+		link.href = "/Curriculum.pdf";
+		link.download = "Paulo Mariano - CV.pdf";
+		link.click();
+	};
+
 	return (
 		<section className="relative min-h-screen flex items-center justify-center overflow-hidden">
 			<div className="absolute inset-0 -z-10">
@@ -27,7 +34,11 @@ export function Hero() {
 					technology.
 				</p>
 				<div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-					<Button size="lg" className="px-8 py-6 rounded-full">
+					<Button
+						size="lg"
+						className="px-8 py-6 rounded-full"
+						onClick={handleDownloadCV}
+					>
 						Download CV
 					</Button>
 				</div>
@@ -37,7 +48,7 @@ export function Hero() {
 				<Button
 					variant="ghost"
 					size="icon"
-					className="rounded-full w-10 h-10 border border-primary/20"
+					className="rounded-full w-10 h-10 border border-primary/20 animate-bounce"
 					onClick={scrollToAbout}
 					aria-label="Scroll down"
 				>
