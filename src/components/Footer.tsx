@@ -8,12 +8,12 @@ export function Footer() {
 					<div>
 						<div className="flex items-center space-x-1 mb-2">
 							<span className="text-xl font-semibold tracking-tight">
-								John Doe
+								Paulo Mariano
 							</span>
 							<span className="text-primary text-2xl">.</span>
 						</div>
 						<p className="text-sm text-muted-foreground">
-							Web Developer & Designer
+							Full Stack Web Developer
 						</p>
 					</div>
 
@@ -45,7 +45,8 @@ export function Footer() {
 							</a>
 						</div>
 						<p className="text-sm text-muted-foreground">
-							&copy; {new Date().getFullYear()} John Doe. All rights reserved.
+							&copy; {new Date().getFullYear()} Paulo Mariano. All rights
+							reserved.
 						</p>
 					</div>
 				</div>

@@ -14,27 +14,21 @@ export function Hero() {
 
 			<div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 				<span className="label inline-block mb-4">
-					Web Developer & Designer
+					Full Stack Web Developer
 				</span>
 				<h1 className="heading-xl mb-6">
-					Creating <span className="text-primary">digital experiences</span>{" "}
-					that make a difference
+					Building <span className="text-primary">accessible, user-first</span>{" "}
+					digital solutions with a focus on innovation and AI
 				</h1>
 				<p className="paragraph max-w-2xl mx-auto mb-10">
-					I'm a web developer specializing in building exceptional digital
-					experiences. Currently, I'm focused on creating accessible,
-					human-centered products.
+					As a full-stack developer, I specialize in creating inclusive and
+					impactful digital experiences. I focus on accessibility, user-centric
+					design, and leveraging AI to enhance how users interact with
+					technology.
 				</p>
 				<div className="flex flex-col sm:flex-row items-center justify-center gap-4">
 					<Button size="lg" className="px-8 py-6 rounded-full">
-						View My Work
-					</Button>
-					<Button
-						size="lg"
-						variant="outline"
-						className="px-8 py-6 rounded-full"
-					>
-						Contact Me
+						Download CV
 					</Button>
 				</div>
 			</div>

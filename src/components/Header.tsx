@@ -15,7 +15,6 @@ export function Header() {
 				const element = document.getElementById(section);
 				if (element) {
 					const rect = element.getBoundingClientRect();
-					// If the section is in view (with some buffer for better UX)
 					if (rect.top <= 200 && rect.bottom >= 200) {
 						setActiveSection(section);
 						break;
@@ -37,7 +36,9 @@ export function Header() {
 		>
 			<div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
 				<div className="flex items-center space-x-1">
-					<span className="text-xl font-semibold tracking-tight">John Doe</span>
+					<span className="text-xl font-semibold tracking-tight">
+						Paulo Mariano
+					</span>
 					<span className="text-primary text-2xl">.</span>
 				</div>
 

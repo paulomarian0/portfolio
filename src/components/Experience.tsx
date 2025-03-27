@@ -12,27 +12,35 @@ type ExperienceItem = {
 const experiences: ExperienceItem[] = [
 	{
 		id: "exp1",
-		date: "2022 - Present",
-		company: "Tech Innovations Inc.",
-		title: "Senior Front-end Developer",
+		date: "April 2024 - March 2025",
+		company: "LocX Real Estate",
+		title: "Front-End Developer",
 		description:
-			"Led the development of a complex SaaS application using React, TypeScript, and GraphQL. Implemented state-of-the-art UI components and optimized performance, resulting in a 40% improvement in load times.",
+			"Working on internal projects using React, JavaScript, and Redux. Handling integration with internal APIs and services, while also providing occasional back-end support with .NET and Entity Framework. Contributing to planning and sprint reviews, and assisting in project refactoring for improved performance.",
 	},
 	{
 		id: "exp2",
-		date: "2020 - 2022",
-		company: "Digital Solutions",
-		title: "Full Stack Developer",
+		date: "March 2023 - March 2024",
+		company: "ILUMEO",
+		title: "Full-Stack Developer",
 		description:
-			"Developed and maintained multiple client websites and web applications. Worked with Node.js, Express, MongoDB, and React. Collaborated with design teams to implement responsive and accessible interfaces.",
+			"Developed front-end features using React, JavaScript, and TypeScript, and back-end systems with Node.js, Prisma, and PostgreSQL. Gained experience with AWS for infrastructure management. Contributed to the development of a platform with 500,000 users, focusing on scalability, performance, and security.",
 	},
 	{
 		id: "exp3",
-		date: "2018 - 2020",
-		company: "Creative Web Agency",
-		title: "Junior Developer",
+		date: "August 2022 - February 2023",
+		company: "Ketra Soluções Inteligentes",
+		title: "Front-End Developer",
 		description:
-			"Assisted in building and maintaining client websites. Learned and implemented modern front-end technologies including React, CSS preprocessing, and responsive design techniques.",
+			"Developed front-end features using React, JavaScript, and TypeScript for a client project. Worked on API integrations and collaborated with the team to create responsive and efficient user interfaces, while occasionally supporting back-end tasks.",
+	},
+	{
+		id: "exp4",
+		date: "June 2021 - August 2022",
+		company: "Infosis Consultoria e Sistemas",
+		title: "Full-Stack Developer",
+		description:
+			"Started as an intern, developing back-end solutions with .NET and Entity Framework, and front-end features using ExtJS and React. Gained exposure to agile methodologies and contributed to various projects, improving full-stack development skills.",
 	},
 ];
 

@@ -1,4 +1,3 @@
-import { cn } from "@/lib/utils";
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
@@ -16,23 +15,23 @@ type Project = {
 const projects: Project[] = [
 	{
 		id: "proj1",
-		title: "E-commerce Platform",
+		title: "Cover Letter AI Generator",
 		description:
-			"A full-featured e-commerce platform with advanced filtering, user authentication, and payment integration.",
+			"An application that generates a cover letter based on your attached resume in PDF format, using AI to create the letter.",
 		image:
 			"https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
-		technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+		technologies: ["React", "TypeScript", "Vercel AI SDK"],
 		demoUrl: "#",
 		codeUrl: "#",
 	},
 	{
 		id: "proj2",
-		title: "Task Management App",
+		title: "Weather Forecast App",
 		description:
-			"A productivity application for managing tasks with drag-and-drop functionality and real-time updates.",
+			"A weather prediction application based on the selected location, using AI to make the forecast query.",
 		image:
 			"https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
-		technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase"],
+		technologies: ["React", "Next.js", "TypeScript", "Vercel AI SDK"],
 		demoUrl: "#",
 		codeUrl: "#",
 	},

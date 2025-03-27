@@ -1,4 +1,3 @@
-import { cn } from "@/lib/utils";
 import { GraduationCap } from "lucide-react";
 
 type EducationItem = {
@@ -11,15 +10,21 @@ type EducationItem = {
 const educationItems: EducationItem[] = [
 	{
 		id: "edu1",
-		degree: "Master of Science in Computer Science",
-		institution: "Stanford University",
-		date: "2016 - 2018",
+		degree: "Bachelor Degree, Computer Science",
+		institution: "Universidade Vila Velha - UVV",
+		date: "2019 - 2022",
 	},
 	{
 		id: "edu2",
-		degree: "Bachelor of Science in Web Development",
-		institution: "University of California",
-		date: "2012 - 2016",
+		degree: "Postgraduate Degree, Software Engineering",
+		institution: "Descomplica Faculdade Digital",
+		date: "2023 - 2024",
+	},
+	{
+		id: "edu3",
+		degree: "Postgraduate Degree, Full Stack Web Development",
+		institution: "Descomplica Faculdade Digital",
+		date: "2024 - 2025",
 	},
 ];
 

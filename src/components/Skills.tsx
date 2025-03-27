@@ -1,5 +1,3 @@
-import { cn } from "@/lib/utils";
-
 type Skill = {
 	category: string;
 	items: string[];
