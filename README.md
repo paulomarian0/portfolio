@@ -11,7 +11,7 @@ This is my personal portfolio where I showcase some of my projects and experienc
 
 ## Live Demo
 
-You can view the live version of my portfolio [here](link to live portfolio, if available).
+You can view the live version of my portfolio [here](https://paulo-mariano.vercel.app).
 
 ## Features
 
