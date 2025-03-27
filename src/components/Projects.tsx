@@ -21,8 +21,8 @@ const projects: Project[] = [
 		image:
 			"https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
 		technologies: ["React", "TypeScript", "Vercel AI SDK"],
-		demoUrl: "#",
-		codeUrl: "#",
+		demoUrl: "https://cover-letter-ai-generator.vercel.app",
+		codeUrl: "https://github.com/paulomarian0/cover-letter-generator",
 	},
 	{
 		id: "proj2",
@@ -32,8 +32,8 @@ const projects: Project[] = [
 		image:
 			"https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
 		technologies: ["React", "Next.js", "TypeScript", "Vercel AI SDK"],
-		demoUrl: "#",
-		codeUrl: "#",
+		demoUrl: "https://vercel-ui-sdk.vercel.app",
+		codeUrl: "https://github.com/paulomarian0/vercel-ui-sdk",
 	},
 ];
 
