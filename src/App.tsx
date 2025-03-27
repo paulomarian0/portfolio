@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Experience } from "@/components/Experience";
@@ -8,8 +9,6 @@ import { Footer } from "@/components/Footer";
 import { About } from "@/components/About";
 
 const App = () => {
-	document.documentElement.classList.add("dark");
-
 	return (
 		<div className="relative">
 			<Header />
