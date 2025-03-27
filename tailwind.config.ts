@@ -65,6 +65,22 @@ export default {
 			transitionTimingFunction: {
 				apple: "cubic-bezier(0.42, 0, 0.58, 1)",
 			},
+			// Add the fade-slide-up animation
+			keyframes: {
+				"fade-slide-up": {
+					"0%": {
+						opacity: "0",
+						transform: "translateX(12px)",
+					},
+					"100%": {
+						opacity: "1",
+						transform: "translateX(0)",
+					},
+				},
+			},
+			animation: {
+				"fade-slide-up": "fade-slide-up 300ms ease-out", // Add the animation utility
+			},
 		},
 	},
 	plugins: [require("tailwindcss-animate")],
