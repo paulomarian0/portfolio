@@ -1,50 +1,56 @@
-"use client";
-import { motion } from "framer-motion";
+import { GraduationCap } from "lucide-react";
 
-export default function Education() {
-  return (
-    <motion.section
-      className="mb-16"
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.3 }}
-    >
-      <motion.h2 className="text-2xl font-bold text-gray-200 mb-8">
-        EDUCATION
-      </motion.h2>
-      <motion.div className="text-left max-w-2xl mx-auto">
-        <motion.div className="mb-8 p-6 border border-gray-600 shadow-md shadow-gray-900 rounded-lg bg-[#161616] transition-shadow duration-300">
-          <h3 className="text-xl font-bold">
-            <i className="fab fa-google text-2xl" /> Bacheelor Degre in Computer
-            Science
-          </h3>
-          <p className="text-gray-500">UVV - Universidade Vila Velha</p>
-          <p className="text-gray-400 mb-4">02/2019 - 11/2022</p>
-          <p className="text-gray-300">
-            Bachelor's Degree in Computer Science. During my time at UVV, I
-            focused on developing a strong foundation in computer science
-            principles, including algorithms, data structures, and software
-            engineering. I also participated in various projects and internships
-            that provided practical experience in the field.
-          </p>
-        </motion.div>
-        <motion.div className="mb-8 p-6 border border-gray-600 shadow-md shadow-gray-900 rounded-lg bg-[#161616] transition-shadow duration-300">
-          <h3 className="text-xl font-bold">
-            <i className="fab fa-google text-2xl" />
-            Postgraduate in Software Engineering
-          </h3>
-          <p className="text-gray-500">Descomplica Faculdade Digital</p>
-          <p className="text-gray-400 mb-4">06/2023 - 01/2024</p>
-          <p className="text-gray-300">
-            Postgraduate in Software Engineering. This program has allowed me to
-            deepen my knowledge in software development methodologies, advanced
-            programming techniques, and project management. I have worked on
-            several capstone projects that simulate real-world software
-            development scenarios, enhancing my problem-solving and teamwork
-            skills.
-          </p>
-        </motion.div>
-      </motion.div>
-    </motion.section>
-  );
+type EducationItem = {
+	id: string;
+	degree: string;
+	institution: string;
+	date: string;
+};
+
+const educationItems: EducationItem[] = [
+	{
+		id: "edu1",
+		degree: "Bachelor Degree, Computer Science",
+		institution: "Universidade Vila Velha - UVV",
+		date: "2019 - 2022",
+	},
+	{
+		id: "edu2",
+		degree: "Postgraduate Degree, Software Engineering",
+		institution: "Descomplica Faculdade Digital",
+		date: "2023 - 2024",
+	},
+	{
+		id: "edu3",
+		degree: "Postgraduate Degree, Full Stack Web Development",
+		institution: "Descomplica Faculdade Digital",
+		date: "2024 - 2025",
+	},
+];
+
+export function Education() {
+	return (
+		<section id="education" className="section-container">
+			<div>
+				<span className="label block mb-2">Academic Background</span>
+				<h2 className="heading-lg mb-12">Education</h2>
+			</div>
+
+			<div className="max-w-3xl">
+				{educationItems.map((item) => (
+					<div key={item.id} className="flex items-start gap-6 mb-12 last:mb-0">
+						<div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+							<GraduationCap className="w-6 h-6 text-primary" />
+						</div>
+
+						<div>
+							<h3 className="text-xl font-semibold mb-1">{item.degree}</h3>
+							<p className="text-muted-foreground mb-2">{item.institution}</p>
+							<p className="text-sm">{item.date}</p>
+						</div>
+					</div>
+				))}
+			</div>
+		</section>
+	);
 }
