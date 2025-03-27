@@ -18,38 +18,6 @@ type Skill = {
 	items: string[];
 };
 
-const skills: Skill[] = [
-	{
-		category: "Frontend",
-		items: [
-			"React",
-			"TypeScript",
-			"Next.js",
-			"TailwindCSS",
-			"HTML5",
-			"CSS3",
-			"JavaScript",
-		],
-	},
-	{
-		category: "Backend",
-		items: ["Node.js", "Express", "GraphQL", "REST APIs", "Firebase"],
-	},
-	{
-		category: "Tools & Platforms",
-		items: ["Git", "GitHub", "VS Code", "Figma", "AWS", "Vercel", "Netlify"],
-	},
-	{
-		category: "Methodologies",
-		items: [
-			"Responsive Design",
-			"CI/CD",
-			"Test-Driven Development",
-			"Agile/Scrum",
-		],
-	},
-];
-
 const icons = [
 	{ id: 1, Icon: SiReact, name: "React" },
 	{ id: 2, Icon: SiJavascript, name: "Javascript" },

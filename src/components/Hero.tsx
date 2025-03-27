@@ -37,7 +37,7 @@ export function Hero() {
 				<Button
 					variant="ghost"
 					size="icon"
-					className="rounded-full w-10 h-10"
+					className="rounded-full w-10 h-10 border border-primary/20"
 					onClick={scrollToAbout}
 					aria-label="Scroll down"
 				>
