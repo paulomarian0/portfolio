@@ -8,6 +8,8 @@ import { Footer } from "@/components/Footer";
 import { About } from "@/components/About";
 
 const App = () => {
+	document.documentElement.classList.add("dark");
+
 	return (
 		<div className="relative">
 			<Header />
