@@ -9,7 +9,7 @@ export function Hero() {
 	const handleDownloadCV = () => {
 		const link = document.createElement("a");
 		link.href = "/Curriculum.pdf";
-		link.download = "Paulo Mariano - CV.pdf";
+		link.setAttribute("download", "Paulo Mariano - CV.pdf");
 		link.click();
 	};
 
