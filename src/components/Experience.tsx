@@ -12,14 +12,22 @@ type ExperienceItem = {
 const experiences: ExperienceItem[] = [
 	{
 		id: "exp1",
+		date: "March 2025 - Present",
+		company: "Verizon",
+		title: "Full-Stack Developer",
+		description:
+			"Developed full-stack solutions using Next.js and TypeScript. Responsible for building front-end features, integrating with APIs, and maintaining back-end systems. Communicated 100% in English with team members from different regions across the globe, collaborating in a distributed environment to deliver high-quality software.",
+	},
+	{
+		id: "exp2",
 		date: "April 2024 - March 2025",
 		company: "LocX Real Estate",
 		title: "Front-End Developer",
 		description:
-			"Working on internal projects using React, JavaScript, and Redux. Handling integration with internal APIs and services, while also providing occasional back-end support with .NET and Entity Framework. Contributing to planning and sprint reviews, and assisting in project refactoring for improved performance.",
+			"Worked on internal projects using React, JavaScript, and Redux. Handled integration with internal APIs and services, while also providing occasional back-end support with .NET and Entity Framework. Contributed to planning and sprint reviews, and assisted in project refactoring for improved performance.",
 	},
 	{
-		id: "exp2",
+		id: "exp3",
 		date: "March 2023 - March 2024",
 		company: "ILUMEO",
 		title: "Full-Stack Developer",
@@ -27,7 +35,7 @@ const experiences: ExperienceItem[] = [
 			"Developed front-end features using React, JavaScript, and TypeScript, and back-end systems with Node.js, Prisma, and PostgreSQL. Gained experience with AWS for infrastructure management. Contributed to the development of a platform with 500,000 users, focusing on scalability, performance, and security.",
 	},
 	{
-		id: "exp3",
+		id: "exp4",
 		date: "August 2022 - February 2023",
 		company: "Ketra Soluções Inteligentes",
 		title: "Front-End Developer",
@@ -35,7 +43,7 @@ const experiences: ExperienceItem[] = [
 			"Developed front-end features using React, JavaScript, and TypeScript for a client project. Worked on API integrations and collaborated with the team to create responsive and efficient user interfaces, while occasionally supporting back-end tasks.",
 	},
 	{
-		id: "exp4",
+		id: "exp5",
 		date: "June 2021 - August 2022",
 		company: "Infosis Consultoria e Sistemas",
 		title: "Full-Stack Developer",
